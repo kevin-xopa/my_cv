@@ -3,5 +3,14 @@ import Vuetify from 'vuetify/lib/framework';
 
 Vue.use(Vuetify);
 
-export default new Vuetify({
-});
+const opts = {
+    icons: {
+        iconfont: 'mdiSvg',
+    },
+    theme: {
+        dark: true,
+        default: 'dark',
+    },
+}
+
+export default new Vuetify(opts)

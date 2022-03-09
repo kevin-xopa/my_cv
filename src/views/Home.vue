@@ -1,17 +1,13 @@
 <template>
-  <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <MyCv />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    MyCv: () =>
+      import(/* webpackChunkName: "VerticalNavMenu"*/ "@/components/MyCv.vue"),
+  },
+};
 </script>
